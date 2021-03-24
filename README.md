@@ -40,6 +40,7 @@ for x in range(0, 10, 1):
 while condition:
     # Do something
 ```  
+* `else` - can be used to run some code when the condition is no longer True
 
 ### Useful keywords  
 * `break` - Used to exit / terminate a loop at any point.  
