@@ -18,7 +18,7 @@ else:
 ### What are for loops?  
  ***For loops are loops that are generally used to iterate through objects or collections of objects. They are***  
  ***also used when the number of times a loop should loop is known beforehand***
-* For use iterating through an object instead of explicet print statments
+* For use iterating through an object instead of explicit print statements
 ```python
 example_list = ['item1', 'item2', 'ect']
 
