@@ -63,12 +63,27 @@ for x in range(0, 10, 1):
 
 ### What are while loops?  
   ***While loops are a form of loop that will continuously run whilst a condition remains True. The condition***  
-  ***The condition is checked at the beginning of every loop***
+  ***is checked at the beginning of every loop***
+* How do we make a while loop?
 ```python
-while condition:
-    # Do something
+num = 0
+while num < 10:  # Stops when num reaches 10
+    print(num)
+    num += 1
 ```  
-* `else` - can be used to run some code when the condition is no longer True
+* When do we use a while loop?  
+  ***We use a while loop when the number of loop iterations is uncertain or when we are unable to use a for loop***  
+* What are some use cases for a while loop?  
+  * Forcing a user to input the correct type of data
+    ```python
+    user_age = input("Please enter your age: ")
+    while not user_age.isdigit():
+        user_age = input("Please enter your age using digits: ")
+    print(f"You are {user_age} years old")
+    ```
+  * As a "game loop" for games constructed in python  
+  * To iterate through a list that is of an uncertain size or that changes in size
+* `else` - can be used to run some code when the condition is no longer True  
 
 ### Useful keywords  
 * `break` - Used to exit / terminate a loop at any point.  
