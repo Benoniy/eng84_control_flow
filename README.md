@@ -18,20 +18,48 @@ else:
 ### What are for loops?  
  ***For loops are loops that are generally used to iterate through objects or collections of objects. They are***  
  ***also used when the number of times a loop should loop is known beforehand***
-* For use iterating through an object
+* For use iterating through an object instead of explicet print statments
 ```python
 example_list = ['item1', 'item2', 'ect']
+
+# print(example_list[0])
+# print(example_list[1])
+# print(example_list[2])
 
 for item in example_list:
     print(item)
 ```  
+* It can also be used to iterate through characters in a string
+```python
+for letter in "word":
+    print(letter)
+```  
+* Dictionaries can be looped through in 3 ways
+```python
+food_bill = {1: {"name": "James", "bill": "£10"},
+             2: {"name": "GoldFinger", "bill": "£1,=000,000"},
+             3: {"name": "Jim", "bill": "£20"}
+             }
+
+# Access and iterate through both keys and values at the same time
+for key, value in food_bill.items():
+    print(key, value)
+
+# Access and iterate through only the keys
+for key in food_bill.keys():
+    print(key)
+
+# Access and iterate through only the values
+for value in food_bill.values():
+    print(value)
+```
 * To loop a certain number of times  
 ```python
 # for current_number in range(start, stop, step)
 
 for x in range(0, 10, 1):
-    print("AA")
-```
+    print(x)
+```  
 
 ### What are while loops?  
   ***While loops are a form of loop that will continuously run whilst a condition remains True. The condition***  
